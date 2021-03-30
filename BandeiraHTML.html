@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+
+    <canvas id="Bandeira" width="200" height="100" style="border:1px solid #d3d3d3;">
+        Seu navegador não suporta a tag "canvas", portanto não foi possivel desenhar a imagem
+    </canvas>
+
+    <script>
+       
+        var c = document.getElementById("Bandeira");
+        var ctx = c.getContext("2d");
+        var o = document.getElementById("Bandeira");
+        var otx = o.getContext("2d");
+        var g = document.getElementById("Bandeira");
+        var gtx = g.getContext("2d");   
+        var f = document.getElementById("Bandeira");
+        var ftx = f.getContext("2d");
+
+        ctx.moveTo(100, 0);
+        ctx.lineTo(0,50);
+        ctx.stroke();
+
+        otx.moveTo(100,0);
+        otx.lineTo(200, 50);
+        otx.stroke();
+
+        gtx.moveTo(100, 100);
+        gtx.lineTo(0, 50);
+        gtx.stroke();
+
+        ftx.moveTo(100, 100);
+        ftx.lineTo(200, 50);
+        ftx.stroke();
+
+        var h = document.getElementById("Bandeira");
+        var htx = h.getContext("2d");
+        htx.beginPath();
+        htx.arc(100, 50, 40, 0, 2 * Math.PI);
+        htx.stroke();
+    </script>
+
+</body>
+</html>
